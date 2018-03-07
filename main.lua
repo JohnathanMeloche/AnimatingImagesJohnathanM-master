@@ -14,27 +14,29 @@ local backgroundimage = display.newImageRect("Images/background.jpg", 1960,1500)
 
 -- hide the status bar
 display.setStatusBar (display.HiddenStatusBar)
---[[
+
 --local function created for Object1
 local function MoveObject1(event)
+
+end
 
 Runtime:addEventListener("enterFrame" MoveObject1)
 
 --local function created for Object2	
 local function MoveObject2(event)
 
+end
+
 Runtime:addEventListener("enterFrame" MoveObject2)
 
 --local function created for Object3	
 local function MoveObject3(event)
 
+end
+
 Runtime:addEventListener("enterFrame" MoveObject3)
 
---local function created for Object4	
-local function MoveObject4(event)
 
-Runtime:addEventListener("enterFrame" MoveObject4)
-]]--
 
 
 
