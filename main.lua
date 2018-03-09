@@ -10,6 +10,16 @@ local backgroundimage = display.newImageRect("Images/background.jpg", 1960,1500)
 	backgroundimage.y = display.contentWidth*76/100
 
 
+local blueCar = display.newImageRect("Images/bluecar.png", 480, 200)
+	blueCar.x = 500
+	blueCar.y = 1100
+
+
+
+local redCar = display.newImageRect("Images/redcar.png", 480, 200)
+	redCar.x = 500
+	redCar.y = 1250
+
 
 
 -- hide the status bar
@@ -18,10 +28,14 @@ display.setStatusBar (display.HiddenStatusBar)
 --local function created for Object1
 local function MoveObject1(event)
 
+	
+
 end
 
-Runtime:addEventListener("enterFrame" MoveObject1)
 
+Runtime:addEventListener("enterFrame", MoveObject1)
+
+--[[
 --local function created for Object2	
 local function MoveObject2(event)
 
@@ -36,7 +50,7 @@ end
 
 Runtime:addEventListener("enterFrame" MoveObject3)
 
-
+]]--
 
 
 
