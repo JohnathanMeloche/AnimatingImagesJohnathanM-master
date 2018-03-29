@@ -3,6 +3,19 @@
 -- Johnathan M ICS20
 -- Animating Images
 
+
+--loads background music file
+local backgroundMusic = audio.loadSound ("Sounds/Party.mp3")
+-- create channel for background music
+local backgroundMusicChannel
+--sets params for background music
+local optionsbackgroundMusic =
+{
+	channel = 2
+}
+audio.setVolume ( 0.35, "optionsbackgroundMusic" )
+	backgroundMusicChannel = audio.play (backgroundMusic)
+
 -- hide the status bar
 display.setStatusBar (display.HiddenStatusBar)
 
@@ -23,10 +36,6 @@ local redCar = display.newImageRect("Images/redcar.png", 480, 200)
 local moveSpeed = 20
 local moveSpeed2 = 40
 redCar.id =  "redCar"
-
-
-
-
 
 
 
@@ -72,12 +81,5 @@ local function moveBlue()
 end
 
 
-
-
-
-
-
-
---Runtime:addEventListener("enterframe", moveBlue)
 timer.performWithDelay(500, moveBlue, 0)
 redCar:addEventListener("touch", moveRed)
